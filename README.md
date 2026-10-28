@@ -1,56 +1,118 @@
-# Shamsul Alam — Personal Portfolio Website
+<div align="center">
 
-A modern, high-performance, dark-first personal portfolio website built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **shadcn/ui**.
+# Shamsul Alam
 
-Inspired by modern developer portfolios with an electric violet aesthetic, clean rounded glassmorphic surfaces, verified metric strips, interactive skills lineup, project showcases, timeline history, and a Formspree-ready contact API route.
+### Full-Stack Developer · Dhaka, Bangladesh
+
+*Turning ideas into well-polished, production-ready web apps.*
+
+<br />
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+
+[**Live Site**](https://YOUR-SITE.vercel.app) · [**LinkedIn**](https://www.linkedin.com/in/shamsulalamcodes/) · [**Email**](mailto:gym.master.0007@gmail.com)
+
+</div>
+
+<!--
+  Add a screenshot of your site here, then delete this comment:
+  <p align="center"><img src="./public/screenshots/hero.png" alt="Portfolio preview" width="820" /></p>
+-->
 
 ---
 
-## ✨ Features
+## About
 
-- **Dark-First Modern Theme**: Deep midnight dark palette (`#0B0B1A`, `#12122A`, `#25253F`, `#6D5CF6`) with an accessible, high-contrast light mode toggle.
-- **Accessible & Contrast Compliant**: Built following WCAG AA standards in both light and dark themes with visible focus indicators and `prefers-reduced-motion` compliance.
-- **Typography via `next/font`**: Elegant serif display titles with **Noto Serif Display** and crisp, readable body text with **Inter**.
-- **Centralized Content Store**: All profile info, bio, skills, projects, timeline history, and socials are configured in a single file (`src/data/content.ts`).
-- **Formspree-Ready Route Handler**: Built-in Next.js API route (`/api/contact`) that seamlessly forwards contact form inquiries to Formspree when configured, with a development fallback and direct mailto link.
-- **Production-Ready & Fully Typed**: Zero TypeScript errors, clean ESLint pass, and static pre-rendering with Next.js Turbopack.
+My personal portfolio: a dark-first, fully responsive site that showcases my projects, skills, and experience. It is built end to end with the same stack I use professionally, and every piece of content lives in one file so updating it takes minutes.
+
+> **Open to junior roles & freelance.** If you have something to build, [let's talk](mailto:gym.master.0007@gmail.com).
 
 ---
 
-## 🚀 Getting Started Locally
+## Features
 
-### 1. Prerequisites
-- **Node.js**: v18.17+ or v20+ recommended
-- **npm**, **pnpm**, or **yarn**
+| | |
+|---|---|
+| **Dark-first theme** | Deep navy palette with a violet accent and a light-mode toggle powered by `next-themes`. |
+| **Accessible by design** | Semantic HTML, visible focus states, keyboard navigation, WCAG AA contrast in both themes, and `prefers-reduced-motion` support. |
+| **Content-driven** | Profile, skills, projects, timeline, and social links all come from a single file: `src/data/content.ts`. |
+| **Working contact form** | Next.js route handler that forwards messages to Formspree, with server-side validation and a honeypot field against bots. |
+| **Editorial typography** | Noto Serif Display for headings and Inter for body text, loaded through `next/font`. |
+| **SEO ready** | Title, meta description, and Open Graph tags configured through the App Router metadata API. |
+| **Responsive** | Mobile-first layout with subtle scroll and hover animations. |
 
-### 2. Install Dependencies
-```bash
-npm install
+---
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Framework | [Next.js](https://nextjs.org/) (App Router, Turbopack) |
+| Language | [TypeScript](https://www.typescriptlang.org/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) |
+| Theming | [next-themes](https://github.com/pacocoursey/next-themes) |
+| Icons | [Lucide React](https://lucide.dev/) + custom SVG brand marks |
+| Contact | Next.js Route Handler + [Formspree](https://formspree.io/) |
+| Hosting | [Vercel](https://vercel.com/) |
+
+---
+
+## Project Structure
+
+```
+portfolio/
+├── app/                  # App Router: layout, page, and /api/contact route
+├── components/           # Section and reusable UI components
+├── hooks/                # Custom React hooks
+├── lib/                  # Shared utilities
+├── public/               # Static assets
+└── src/data/content.ts   # Single source of truth for all site content
 ```
 
-### 3. Run the Development Server
+---
+
+## Getting Started
+
+**Prerequisites:** Node.js 20.9+ and npm (pnpm or yarn also work).
+
 ```bash
+# 1. Clone the repository
+git clone https://github.com/shamsulalamcodes/portfolio.git
+cd portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-### 4. Build and Quality Scripts
-- **TypeScript Check**: `npm run typecheck` (`tsc --noEmit`)
-- **Linting**: `npm run lint` (`eslint`)
-- **Production Build**: `npm run build` (`next build`)
-- **Formatting**: `npm run format` (`prettier --write "**/*.{ts,tsx}"`)
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Scripts
+
+| Command | What it does |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Run the TypeScript compiler without emitting files |
+| `npm run format` | Format `.ts` and `.tsx` files with Prettier |
 
 ---
 
-## 📝 How to Edit Content
+## Editing the Content
 
-All customizable content is located in a single file:
-👉 **[`src/data/content.ts`](src/data/content.ts)**
+Everything you see on the site is configured in [`src/data/content.ts`](./src/data/content.ts). You never need to hunt through component files.
 
-You do not need to hunt through component files to update your portfolio. You can edit:
+<details>
+<summary><b>Profile & hero</b></summary>
 
-### Personal Profile & Hero
-```typescript
+```ts
 personal: {
   nameFirst: "Shamsul",
   nameLast: "Alam",
@@ -58,108 +120,99 @@ personal: {
   location: "Dhaka, Bangladesh",
   heroBadge: "Open to junior roles & freelance",
   tagline: "Turning ideas into well-polished, production-ready web apps.",
-  shortBio: "Full-stack developer. I take web apps from database to UI...",
-  aboutBio: "Hi, I'm Shams, a full-stack developer based in Dhaka...",
   email: "gym.master.0007@gmail.com",
-  stats: {
-    skillsCount: "9+",
-    primaryStack: "Next.js · MERN",
-    locationShort: "Dhaka, BD",
-    statusText: "Open to Work",
-  },
 }
 ```
+</details>
 
-### Skills & Progress
-```typescript
+<details>
+<summary><b>Skills</b></summary>
+
+```ts
 skills: [
-  { name: "Node.js", level: 85, category: "backend", iconName: "nodejs" },
-  { name: "React", level: 90, category: "frontend", iconName: "react" },
-  { name: "Tailwind CSS", level: 92, category: "frontend", iconName: "tailwind" },
+  { name: "React", category: "frontend", iconName: "react" },
+  { name: "Node.js", category: "backend", iconName: "nodejs" },
   // ...
 ]
 ```
+</details>
 
-### Projects
-Replace or add projects in the `projects` array:
-```typescript
+<details>
+<summary><b>Projects</b></summary>
+
+```ts
 {
-  id: "shopsphere",
-  title: "ShopSphere",
-  subtitle: "Full-Stack E-Commerce Platform",
+  id: "fitlog",
+  title: "FitLog",
+  subtitle: "Workout Library & Daily Planner",
   description: "...",
-  techStack: ["Next.js", "React", "Node.js", "MongoDB", "Tailwind CSS"],
-  liveUrl: "https://your-live-demo.com",
-  githubUrl: "https://github.com/shamsulalamcodes/shopsphere",
+  techStack: ["Next.js", "JavaScript", "Tailwind CSS"],
+  liveUrl: "https://a6-fitbit.vercel.app",
+  githubUrl: "https://github.com/shamsulalamcodes/a6-fitbit",
   featured: true,
 }
 ```
+</details>
 
-### Experience & Education Timeline
-Update entries in `timeline`:
-```typescript
+<details>
+<summary><b>Experience & education timeline</b></summary>
+
+```ts
 {
   id: "exp-1",
   title: "Full-Stack Web Development",
   role: "Freelance / Project Developer",
   period: "2024 — Present",
-  type: "experience", // "experience" or "education"
-  location: "Dhaka, Bangladesh",
+  type: "experience", // "experience" | "education"
   description: "...",
   highlights: ["...", "..."],
 }
 ```
+</details>
 
 ---
 
-## 📬 Setting Up the Contact Form (Formspree)
+## Contact Form Setup
 
-The contact form sends requests to the internal Next.js route handler at `app/api/contact/route.ts`.
+The form posts to `app/api/contact/route.ts`, which validates the input and forwards it to [Formspree](https://formspree.io/). Your endpoint stays on the server and is never exposed to the browser.
 
-### Steps:
-1. Create a free account at [Formspree.io](https://formspree.io) and create a new form.
-2. Copy your Formspree Endpoint (e.g. `https://formspree.io/f/mqazkxyz`) or Form ID (`mqazkxyz`).
-3. Create a `.env.local` file in the root directory:
+1. Create a free form at [formspree.io](https://formspree.io/) and copy its endpoint (it looks like `https://formspree.io/f/xxxxxxxx`).
+2. Create a `.env.local` file in the **project root**, next to `package.json`:
+
    ```bash
-   cp .env.example .env.local
+   FORMSPREE_ENDPOINT=https://formspree.io/f/xxxxxxxx
    ```
-4. Set your environment variable:
-   ```env
-   FORMSPREE_ENDPOINT=https://formspree.io/f/mqazkxyz
-   ```
-   *(Alternatively, set `FORMSPREE_FORM_ID=mqazkxyz`)*
 
-> **Note**: If no environment variable is provided, submissions are logged locally to the server terminal, and a simulated confirmation is returned to the user, with direct `mailto:` links always available as a fallback.
+3. **Restart the dev server.** Next.js reads env files only at startup.
+4. Submit the form once and confirm your email when Formspree asks.
+
+> **Development vs. production:** without `FORMSPREE_ENDPOINT`, the form logs submissions to the terminal in development. In production it returns an error instead, so a missing variable never silently drops a real message.
 
 ---
 
-## 🌐 Deploying to Vercel
+## Deployment
 
-The portfolio is fully optimized for **Vercel** with Next.js App Router:
+The site is built for [Vercel](https://vercel.com/):
 
-1. Push your repository to **GitHub**:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: complete personal portfolio website"
-   git remote add origin https://github.com/shamsulalamcodes/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. Go to [vercel.com](https://vercel.com) and log in.
-3. Click **Add New...** → **Project**.
-4. Select your `portfolio` repository from GitHub.
-5. In the **Environment Variables** section, add your Formspree endpoint (optional):
-   - Key: `FORMSPREE_ENDPOINT`
-   - Value: `https://formspree.io/f/your_form_id`
-6. Click **Deploy**. Vercel will build and assign you a free `*.vercel.app` production domain with automatic SSL.
+1. Push the repository to GitHub.
+2. In Vercel, click **Add New → Project** and import this repository.
+3. Under **Environment Variables**, add `FORMSPREE_ENDPOINT` with your Formspree URL.
+4. Click **Deploy**. Vercel assigns a `*.vercel.app` domain with automatic SSL.
+
+Remember to redeploy after changing environment variables.
 
 ---
 
-## 🛠 Tech Stack
+## Connect
 
-- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Theme Management**: [next-themes](https://github.com/pacocoursey/next-themes)
-- **Icons**: [Lucide React](https://lucide.dev/) + Custom SVG brand marks
+<p>
+  <a href="https://github.com/shamsulalamcodes"><img src="https://img.shields.io/badge/GitHub-shamsulalamcodes-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/shamsulalamcodes/"><img src="https://img.shields.io/badge/LinkedIn-shamsulalamcodes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:gym.master.0007@gmail.com"><img src="https://img.shields.io/badge/Email-Get_in_touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
+
+<div align="center">
+
+<sub>Designed and built by <b>Shamsul Alam</b></sub>
+
+</div>
