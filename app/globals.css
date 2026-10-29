@@ -2,8 +2,9 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-* {
-  /* outline: 1px solid red !important; */
+html,
+body {
+  overflow-x: clip;
 }
 
 @theme {

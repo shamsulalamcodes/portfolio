@@ -78,7 +78,7 @@ export function ContactSection() {
     <section id="contact" className="py-20 md:py-28 relative" aria-label="Contact and Inquiries">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Banner matching the demo screenshot */}
-        <div className="rounded-3xl bg-[var(--card)] border border-[var(--card-border)] p-8 sm:p-10 mb-14 shadow-xl relative overflow-hidden">
+        <div className="relative overflow-hidden rounded-2xl bg-[var(--card)] border border-[var(--card-border)] p-8 sm:p-10 mb-14 shadow-xl relative overflow-hidden">
           {/* Subtle accent glow inside card */}
           <div
             className="absolute -right-20 -bottom-20 w-80 h-80 bg-[var(--glow-color)] blur-[90px] rounded-full pointer-events-none"
