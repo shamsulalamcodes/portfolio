@@ -76,15 +76,15 @@ export const content: SiteContent = {
     heroBadge: "Open to junior roles & freelance",
     tagline: "Turning ideas into well-polished, production-ready web apps.",
     shortBio:
-      "Full-stack developer. I take web apps from database to UI with Next.js, React, Node.js, and MongoDB. Available for junior roles and freelance projects.",
+      "I build complete web apps, from database design to responsive interfaces, with a focus on clean code and accessibility.",
     aboutBio:
-      "Hi, I'm Shams, a full-stack developer based in Dhaka. I like owning a project end to end: designing the data model, building the API, and shaping the UI. My go-to stack is Next.js, React, Node.js, and MongoDB. I'm open to junior roles and freelance work, so if you have something to build, let's talk.",
+      "Hi, I'm Shams, a full-stack developer based in Dhaka. I like owning a project end to end: designing the data model, building the API, and shaping the UI. My go-to stack is Next.js, React, Node.js, and MongoDB, and I care about clean code and interfaces that are easy to use. I'm open to junior roles and freelance work, so if you have something to build, let's talk.",
     availability: "Available for Hire",
     email: "gym.master.0007@gmail.com",
     stats: {
       skillsCount: "9+",
       primaryStack: "Next.js · MERN",
-      locationShort: "Dhaka, BD",
+      locationShort: "Based in",
       statusText: "Open to Work",
     },
   },
