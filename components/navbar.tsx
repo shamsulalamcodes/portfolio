@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Code2, Menu, X, ArrowUpRight } from "lucide-react"
+import { Code2, Menu, X, ArrowUpRight, FileUser } from "lucide-react"
 import { content } from "@/src/data/content"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { SmoothScrollLink } from "@/components/smooth-scroll-link"
@@ -86,8 +86,8 @@ export function Navbar() {
             href={content.resume}
             className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-[var(--card)] border border-[var(--card-border)] hover:border-[var(--accent-color)] hover:text-[var(--accent-color)] text-[var(--foreground)] transition-all shadow-xs group"
           >
+            <FileUser className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             <span>Resume</span>
-            <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </SmoothScrollLink>
         </div>
 
@@ -122,12 +122,13 @@ export function Navbar() {
             ))}
             <div className="pt-2">
               <SmoothScrollLink
-                href="#contact"
+                target="_blank"
                 onClick={() => setMobileMenuOpen(false)}
+                href={content.resume}
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-[var(--accent-color)] text-white text-sm font-medium shadow-md shadow-[var(--accent-color)]/25"
               >
-                <span>Get in Touch</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <FileUser className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <span>Resume</span>
               </SmoothScrollLink>
             </div>
           </nav>
