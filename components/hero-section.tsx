@@ -163,7 +163,7 @@ export function HeroSection() {
         </div>
 
         {/* Real Stats Strip Below Hero */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-16 sm:mt-20 w-full mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 mx-auto md:grid-cols-4 gap-4 sm:gap-6 bg-[var(--card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 shadow-md shadow-black/5">
             {/* 1: Skills Count */}
             <div className="flex items-center gap-3 sm:gap-4 p-2 sm:p-3">
