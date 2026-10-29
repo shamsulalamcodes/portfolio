@@ -28,7 +28,7 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-6 text-left">
@@ -164,7 +164,7 @@ export function HeroSection() {
 
         {/* Real Stats Strip Below Hero */}
         <div className="mt-16 sm:mt-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 bg-[var(--card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 shadow-md shadow-black/5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mx-auto md:grid-cols-4 gap-4 sm:gap-6 bg-[var(--card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 shadow-md shadow-black/5">
             {/* 1: Skills Count */}
             <div className="flex items-center gap-3 sm:gap-4 p-2 sm:p-3">
               <div className="w-11 h-11 rounded-xl bg-[var(--badge-bg)] border border-[var(--badge-border)] text-[var(--accent-color)] flex items-center justify-center shrink-0">

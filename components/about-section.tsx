@@ -80,7 +80,7 @@ export function AboutSection() {
 
   return (
     <section id="about" className="py-20 md:py-28 relative" aria-label="About and Skills">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
           {/* Left Column: About Me */}
           <div className="lg:col-span-5 flex flex-col items-start space-y-6">

@@ -34,12 +34,12 @@ export function Navbar() {
   return (
     <header
       id="site-header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+      className={`fixed top-0 left-0 right-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
         ? "bg-[var(--header-bg)] backdrop-blur-md border-b border-[var(--card-border)] py-3 shadow-lg shadow-black/5"
         : "bg-transparent py-5"
         }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <SmoothScrollLink
           href="#hero"
@@ -56,8 +56,7 @@ export function Navbar() {
         </SmoothScrollLink>
 
         {/* Desktop Navigation Links */}
-        <nav
-          className="hidden md:flex items-center gap-1 bg-[var(--card)]/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-[var(--card-border)] shadow-xs"
+        <nav className="hidden md:flex items-center gap-1 bg-[var(--card)]/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-[var(--card-border)] shadow-xs"
           aria-label="Main Navigation"
         >
           {content.navigation.map((item) => {
@@ -87,7 +86,7 @@ export function Navbar() {
             href={content.resume}
             className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-[var(--card)] border border-[var(--card-border)] hover:border-[var(--accent-color)] hover:text-[var(--accent-color)] text-[var(--foreground)] transition-all shadow-xs group"
           >
-            <span>My Resume</span>
+            <span>Resume</span>
             <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </SmoothScrollLink>
         </div>

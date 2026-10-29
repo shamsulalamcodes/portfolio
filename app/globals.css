@@ -2,6 +2,10 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+* {
+  /* outline: 1px solid red !important; */
+}
+
 @theme {
   --color-bg-dark: #0b0b1a;
   --color-surface-dark: #12122a;
@@ -104,6 +108,7 @@ body {
   html {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {

@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />

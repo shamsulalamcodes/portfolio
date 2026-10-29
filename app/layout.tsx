@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shamsulalam.dev"),
+  metadataBase: new URL("https://shamsulalamcodes.vercel.app"),
   title: "Shamsul Alam | Full-Stack Developer",
   description:
     "Full-stack developer based in Dhaka, Bangladesh. Building scalable, production-ready web applications with Next.js, React, Node.js, and MongoDB. Open to junior roles and freelance projects.",
@@ -46,18 +46,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shamsulalam.dev",
+    url: "https://shamsulalamcodes.vercel.app",
     title: "Shamsul Alam | Full-Stack Developer",
     description:
       "Full-stack developer. I take web apps from database to UI with Next.js, React, Node.js, and MongoDB. Available for junior roles and freelance projects.",
     siteName: "Shamsul Alam Portfolio",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Shamsul Alam | Full-Stack Developer",
-    description:
-      "Turning ideas into well-polished, production-ready web apps with Next.js, React, Node.js, and MongoDB.",
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Shamsul Alam | Full-Stack Developer",
+  //   description:
+  //     "Turning ideas into well-polished, production-ready web apps with Next.js, React, Node.js, and MongoDB.",
+  // },
   robots: {
     index: true,
     follow: true,
