@@ -34,11 +34,10 @@ export function Navbar() {
   return (
     <header
       id="site-header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[var(--header-bg)] backdrop-blur-md border-b border-[var(--card-border)] py-3 shadow-lg shadow-black/5"
-          : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-[var(--header-bg)] backdrop-blur-md border-b border-[var(--card-border)] py-3 shadow-lg shadow-black/5"
+        : "bg-transparent py-5"
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
@@ -69,11 +68,10 @@ export function Navbar() {
               <SmoothScrollLink
                 key={item.href}
                 href={item.href}
-                className={`relative px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ${
-                  isActive
-                    ? "text-white bg-[var(--accent-color)] shadow-sm"
-                    : "text-[var(--body-muted)] hover:text-[var(--foreground)] hover:bg-[var(--badge-bg)]"
-                }`}
+                className={`relative px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ${isActive
+                  ? "text-white bg-[var(--accent-color)] shadow-sm"
+                  : "text-[var(--body-muted)] hover:text-[var(--foreground)] hover:bg-[var(--badge-bg)]"
+                  }`}
               >
                 {item.label}
               </SmoothScrollLink>
@@ -85,10 +83,11 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <SmoothScrollLink
-            href="#contact"
+            target="_blank"
+            href={content.resume}
             className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-[var(--card)] border border-[var(--card-border)] hover:border-[var(--accent-color)] hover:text-[var(--accent-color)] text-[var(--foreground)] transition-all shadow-xs group"
           >
-            <span>Let&apos;s Talk</span>
+            <span>My Resume</span>
             <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </SmoothScrollLink>
         </div>

@@ -35,6 +35,7 @@ export interface SocialLink {
 }
 
 export interface SiteContent {
+  resume: string,
   personal: {
     nameFirst: string
     nameLast: string
@@ -65,6 +66,7 @@ export interface SiteContent {
 }
 
 export const content: SiteContent = {
+  resume: "https://drive.google.com/file/d/10DJ77CDnUmYRMMcadiKKvhLdhyiqKrgo/view?usp=drive_link",
   personal: {
     nameFirst: "Shamsul",
     nameLast: "Alam",
